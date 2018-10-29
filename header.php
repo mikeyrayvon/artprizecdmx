@@ -29,5 +29,26 @@ get_template_part('partials/seo');
 <section id="main-container">
 
   <header id="header">
-    <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+    <h1 class="u-visuallyhidden">Artprize CDMX 2019</h1>
+    <?php get_template_part('partials/artprizecdmx-logo.svg'); ?>
   </header>
+
+  <nav id="nav">
+    <div class="grid-row font-bold font-size-small">
+      <div class="grid-item no-gutter">
+        <a class="nav-item" data-id="prize">Premio</a>
+      </div>
+      <div class="grid-item no-gutter">
+        <a class="nav-item" data-id="judges">Jurado</a>
+      </div>
+      <div class="grid-item no-gutter">
+        <a class="nav-item" data-id="apply">Aplicar</a>
+      </div>
+      <div class="grid-item no-gutter">
+        <a class="nav-item" data-id="dates">Fechas</a>
+      </div>
+      <div class="grid-item no-gutter">
+        <a class="nav-item" data-id="contact">Contacto</a>
+      </div>
+    </div>
+  </nav>
