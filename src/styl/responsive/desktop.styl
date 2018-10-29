@@ -1,6 +1,16 @@
 @media screen and (min-width: 1366px)
 
-  $gutter = 26px
+  $font-size-large = 40px
+  $font-size-mid = 32px
+  $font-size-basic = 24px
+  $font-size-small = 16px
+  $font-size-tiny = 10px
 
-  grid-maker(1300px, $gutter, xl)
+  font-sizes($font-size-basic, false, $font-size-large, $font-size-mid, $font-size-small, $font-size-tiny)
 
+  #logo
+    width: 640px
+    height: 352px
+
+  #main-content
+    max-width: 600px

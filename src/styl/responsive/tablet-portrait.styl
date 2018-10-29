@@ -1,6 +1,4 @@
-@media screen and (min-width: 720px)
-
-  $gutter = 21px
+@media screen and (min-width: 700px)
 
   $margin-micro = ($gutter / 3)
   $margin-tiny = ($gutter / 2)
@@ -9,14 +7,32 @@
   $margin-mid = ($gutter * 3.5)
   $margin-large = ($gutter * 5)
 
-  $font-size-basic = 14px
+  $font-size-large = 40px
+  $font-size-mid = 32px
+  $font-size-basic = 24px
+  $font-size-small = 16px
+  $font-size-tiny = 10px
 
   space-maker($margin-micro, $margin-tiny, $margin-small, $margin-basic, $margin-mid, $margin-large)
 
-  grid-maker(680px, $gutter, m)
-
-  font-sizes($font-size-basic)
+  font-sizes($font-size-basic, false, $font-size-large, $font-size-mid, $font-size-small, $font-size-tiny)
 
   .mobile-only
     display: none !important
 
+  $header-height = 302px
+
+  #logo
+    width: 380px
+    height: 209px
+
+  #nav
+    .grid-row
+      width: 80%
+      margin-left: 10%
+
+  #main-content
+    max-width: 520px
+
+  #prize
+    padding-top: $header-height

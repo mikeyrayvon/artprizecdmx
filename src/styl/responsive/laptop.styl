@@ -1,3 +1,21 @@
 @media screen and (min-width: 1280px)
 
-  grid-maker(1200px)
+  $font-size-large = 36px
+  $font-size-mid = 28px
+  $font-size-basic = 21px
+  $font-size-small = 16px
+  $font-size-tiny = 10px
+
+  font-sizes($font-size-basic, false, $font-size-large, $font-size-mid, $font-size-small, $font-size-tiny)
+
+  #logo
+    width: 512px
+    height: 282px
+
+  #nav
+    .grid-row
+      width: 85%
+      margin-left: 7.5%
+
+  #main-content
+    max-width: 490px

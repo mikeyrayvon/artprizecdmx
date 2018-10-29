@@ -21,7 +21,7 @@ normalize()
 // FONTS
 @import 'fonts/fonts'
 
-$font-sans = font-stack('Helvetica')
+$font-sans = 'Globie America', font-stack('Helvetica')
 $font-serif = font-stack('Georgia')
 
 // ******************************************************
@@ -62,20 +62,24 @@ body
 .line-larger
   line-height: $font-leading-larger
 
+.font-bold, strong
+  font-weight: 400
+  font-family: 'Globie America Med', font-stack('Helvetica')
+
 // ******************************************************
 
 // VARIABLES
 
-$color-black = rgb(0, 0, 0)
-$color-white = rgb(255, 255, 255)
+$color-black = rgb(28, 28, 28)
+$color-white = rgb(240, 240, 240)
 
 // ******************************************************
 
 // BASIC
 
 html
-  color: $color-black
-  background-color: $color-white
+  color: $color-white
+  background-color: $color-black
 
 img
   height: auto
@@ -87,7 +91,7 @@ img
 .desktop-only
   display: none !important
 
-// ******************************************************
+// *****************************************************
 
 // MEDIA QUERIES
 
