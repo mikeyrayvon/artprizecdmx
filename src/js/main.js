@@ -26,7 +26,7 @@ class Site {
 
   onReady() {
     lazySizes.init();
-    smoothscroll.polyfill();
+    //smoothscroll.polyfill();
     this.bindScrollNav();
   }
 
@@ -47,7 +47,7 @@ class Site {
     const sectionId = $(event.target).attr('data-id');
     const section = document.getElementById(sectionId);
 
-    section.scrollIntoView({ behavior: 'smooth' });
+    section.scrollIntoView();
   }
 }
 

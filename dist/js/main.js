@@ -113,7 +113,7 @@ var Site = function () {
     key: 'onReady',
     value: function onReady() {
       _lazysizes2.default.init();
-      _smoothscrollPolyfill2.default.polyfill();
+      //smoothscroll.polyfill();
       this.bindScrollNav();
     }
   }, {
@@ -137,7 +137,7 @@ var Site = function () {
       var sectionId = $(event.target).attr('data-id');
       var section = document.getElementById(sectionId);
 
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView();
     }
   }]);
 
