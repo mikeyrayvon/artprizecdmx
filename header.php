@@ -42,7 +42,7 @@ get_template_part('partials/seo');
   </header>
 
   <nav id="nav">
-    <div class="grid-row font-bold font-size-small">
+    <div class="grid-row font-size-small">
       <div class="grid-item no-gutter">
         <a class="nav-item" data-id="prize"><?php _e('[:en]Prize[:es]Premio[:]'); ?></a>
       </div>
