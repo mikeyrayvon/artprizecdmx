@@ -27,28 +27,36 @@ get_template_part('partials/seo');
 <!--[if lt IE 9]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 
 <section id="main-container">
+  <div id="language-switch" class="font-size-small">
+    <?php
+      $lang = qtranxf_getLanguage() === 'en' ? 'es' : 'en';
+      echo '<a href="?lang=' . $lang . '" hreflang="' . $lang . '">';
+      _e('[:en]Leer en español[:es]Read in English[:]');
+      echo '</a>';
+    ?>
+  </div>
 
   <header id="header">
-    <h1 class="u-visuallyhidden">Artprize CDMX 2019</h1>
+    <h1 class="u-visuallyhidden">ArtprizeCDMX 2019</h1>
     <?php get_template_part('partials/artprizecdmx-logo.svg'); ?>
   </header>
 
   <nav id="nav">
     <div class="grid-row font-bold font-size-small">
       <div class="grid-item no-gutter">
-        <a class="nav-item" data-id="prize">Premio</a>
+        <a class="nav-item" data-id="prize"><?php _e('[:en]Prize[:es]Premio[:]'); ?></a>
       </div>
       <div class="grid-item no-gutter">
-        <a class="nav-item" data-id="judges">Jurado</a>
+        <a class="nav-item" data-id="judges"><?php _e('[:en]Jury[:es]Jurado[:]'); ?></a>
       </div>
       <div class="grid-item no-gutter">
-        <a class="nav-item" data-id="apply">Aplicar</a>
+        <a class="nav-item" data-id="apply"><?php _e('[:en]Apply[:es]Aplicar[:]'); ?></a>
       </div>
       <div class="grid-item no-gutter">
-        <a class="nav-item" data-id="dates">Fechas</a>
+        <a class="nav-item" data-id="dates"><?php _e('[:en]Dates[:es]Fechas[:]'); ?></a>
       </div>
       <div class="grid-item no-gutter">
-        <a class="nav-item" data-id="contact">Contacto</a>
+        <a class="nav-item" data-id="contact"><?php _e('[:en]Contact[:es]Contacto[:]'); ?></a>
       </div>
     </div>
   </nav>
