@@ -88,6 +88,9 @@ function igv_cmb_metaboxes() {
       'id'         => 'bio',
       'type'       => 'textarea',
       'description' => esc_html__( '', 'cmb2' ),
+      'attributes' => array(
+        'class' => 'cmb2-qtranslate',
+      ),
     ) );
 
     $home_metabox->add_field( array(
