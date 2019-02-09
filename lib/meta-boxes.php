@@ -59,6 +59,7 @@ function igv_cmb_metaboxes() {
       'type'       => 'wysiwyg',
       'options' => array(
         'textarea_rows' => get_option('default_post_edit_rows', 16), // rows="..."
+        'editor_class' => 'cmb2-qtranslate'
       ),
     ) );
 
@@ -85,12 +86,8 @@ function igv_cmb_metaboxes() {
     $home_metabox->add_group_field( $judges_group, array(
       'name'       => esc_html__( 'Bio', 'cmb2' ),
       'id'         => 'bio',
-      'type'       => 'wysiwyg',
+      'type'       => 'textarea',
       'description' => esc_html__( '', 'cmb2' ),
-      'options' => array(
-        'media_buttons' => false, // show insert/upload button(s)
-        'textarea_rows' => get_option('default_post_edit_rows', 5), // rows="..."
-      ),
     ) );
 
     $home_metabox->add_field( array(
@@ -99,6 +96,7 @@ function igv_cmb_metaboxes() {
       'type'       => 'wysiwyg',
       'options' => array(
         'textarea_rows' => get_option('default_post_edit_rows', 16), // rows="..."
+        'editor_class' => 'cmb2-qtranslate'
       ),
     ) );
 
@@ -108,6 +106,7 @@ function igv_cmb_metaboxes() {
       'type'       => 'wysiwyg',
       'options' => array(
         'textarea_rows' => get_option('default_post_edit_rows', 8), // rows="..."
+        'editor_class' => 'cmb2-qtranslate'
       ),
     ) );
 
@@ -117,6 +116,7 @@ function igv_cmb_metaboxes() {
       'type'       => 'wysiwyg',
       'options' => array(
         'textarea_rows' => get_option('default_post_edit_rows', 8), // rows="..."
+        'editor_class' => 'cmb2-qtranslate'
       ),
     ) );
 
