@@ -21,8 +21,6 @@ if (have_posts()) {
     <?php echo !empty($prize) ? apply_filters('the_content', $prize) : ''; ?>
   </section>
 
-<?php
-/*
   <section id="judges" class="padding-top-basic">
     <h2 class="font-size-large margin-bottom-small font-bold"><?php _e('[:en]Jury[:es]Jurado[:]'); ?></h2>
     <?php
@@ -51,8 +49,6 @@ if (have_posts()) {
     <h2 class="font-size-large margin-bottom-small font-bold"><?php _e('[:en]Contact[:es]Contacto[:]'); ?></h2>
     <?php echo !empty($contact) ? apply_filters('the_content', $contact) : ''; ?>
   </section>
-*/
-?>
 
 <?php
   }
