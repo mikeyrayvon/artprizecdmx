@@ -41,7 +41,7 @@ get_template_part('partials/seo');
     <?php get_template_part('partials/artprizecdmx-logo.svg'); ?>
   </header>
 
-  <!--nav id="nav">
+  <nav id="nav">
     <div class="grid-row font-size-small">
       <div class="grid-item no-gutter">
         <a class="nav-item" data-id="prize"><?php _e('[:en]Prize[:es]Premio[:]'); ?></a>
@@ -59,4 +59,4 @@ get_template_part('partials/seo');
         <a class="nav-item" data-id="contact"><?php _e('[:en]Contact[:es]Contacto[:]'); ?></a>
       </div>
     </div>
-  </nav-->
+  </nav>
