@@ -27,7 +27,7 @@ if (have_posts()) {
       if (!empty($judges)) {
         foreach ($judges as $judge) {
           echo '<div class="judge">';
-          echo '<h3 class="font-size-mid">' . $judge['name'] . ' —</h3>';
+          echo '<h3 class="font-size-mid">' . $judge['name'] . '</h3>';
           echo apply_filters('the_content', $judge['bio']);
           echo '</div>';
         }
