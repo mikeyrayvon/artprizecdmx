@@ -38,7 +38,9 @@ get_template_part('partials/seo');
 
   <header id="header">
     <h1 class="u-visuallyhidden">ArtprizeCDMX 2019</h1>
-    <?php get_template_part('partials/artprizecdmx-logo.svg'); ?>
+    <div id="logo-holder">
+      <?php get_template_part('partials/artprizecdmx-logo.svg'); ?>
+    </div>
   </header>
 
   <nav id="nav">
