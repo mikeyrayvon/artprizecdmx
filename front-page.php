@@ -22,7 +22,7 @@ if (have_posts()) {
   </section>
 
   <section id="judges" class="padding-top-basic">
-    <h2 class="font-size-large margin-bottom-small font-bold"><?php _e('[:en]Jury[:es]Jurado[:]'); ?></h2>
+    <h2 class="font-size-large margin-bottom-small font-bold section-border"><?php _e('[:en]Jury[:es]Jurado[:]'); ?></h2>
     <?php
       if (!empty($judges)) {
         foreach ($judges as $judge) {
@@ -36,16 +36,16 @@ if (have_posts()) {
   </section>
 
   <section id="apply" class="padding-top-basic">
-    <h2 class="font-size-large margin-bottom-small font-bold"><?php _e('[:en]Apply[:es]Aplicar[:]'); ?></h2>
+    <h2 class="font-size-large margin-bottom-small font-bold section-border"><?php _e('[:en]Apply[:es]Aplicar[:]'); ?></h2>
     <?php echo !empty($apply) ? apply_filters('the_content', $apply) : ''; ?>
   </section>
 
   <section id="dates" class="padding-top-basic">
-    <h2 class="font-size-large margin-bottom-small font-bold"><?php _e('[:en]Dates[:es]Fechas[:]'); ?></h2>
+    <h2 class="font-size-large margin-bottom-small font-bold section-border"><?php _e('[:en]Dates[:es]Fechas[:]'); ?></h2>
     <?php echo !empty($dates) ? apply_filters('the_content', $dates) : ''; ?>
   </section>
 
-  <section id="contact" class="padding-top-basic padding-bottom-basic">
+  <section id="contact" class="padding-top-basic padding-bottom-basic section-border">
     <h2 class="font-size-large margin-bottom-small font-bold"><?php _e('[:en]Contact[:es]Contacto[:]'); ?></h2>
     <?php echo !empty($contact) ? apply_filters('the_content', $contact) : ''; ?>
   </section>
