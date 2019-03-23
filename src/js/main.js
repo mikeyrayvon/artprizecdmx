@@ -53,10 +53,10 @@ class Site {
   }
 
   initCarousel() {
-    if ($('.carousel-item').length) {
-      this.carouselLength = $('.carousel-item').length;
-      this.activeCarouselIndex = 0;
+    this.carouselLength = $('.carousel-item').length;
 
+    if (this.carouselLength > 1) {
+      this.activeCarouselIndex = 0;
       setInterval(this.updateActiveCarouselItem, 10000);
     }
   }
