@@ -54,6 +54,14 @@ function igv_cmb_metaboxes() {
   	) );
 
     $home_metabox->add_field( array(
+  		'name'         => esc_html__( 'Image carousel', 'cmb2' ),
+  		'desc'         => esc_html__( 'Upload or add multiple images', 'cmb2' ),
+  		'id'           => $prefix . 'carousel_images',
+  		'type'         => 'file_list',
+  		'preview_size' => array( 150, 150 ), // Default: array( 50, 50 )
+  	) );
+
+    $home_metabox->add_field( array(
       'name'       => esc_html__( 'Prize', 'cmb2' ),
       'id'         => $prefix . 'home_prize',
       'type'       => 'wysiwyg',

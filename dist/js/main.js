@@ -100,6 +100,7 @@ var Site = function () {
     this.mobileThreshold = 601;
 
     this.handleScrollNav = this.handleScrollNav.bind(this);
+    this.updateActiveCarouselItem = this.updateActiveCarouselItem.bind(this);
 
     $(window).resize(this.onResize.bind(this));
 
@@ -115,6 +116,7 @@ var Site = function () {
       _lazysizes2.default.init();
       //smoothscroll.polyfill();
       this.bindScrollNav();
+      this.initCarousel();
     }
   }, {
     key: 'fixWidows',
@@ -138,6 +140,29 @@ var Site = function () {
       var section = document.getElementById(sectionId);
 
       section.scrollIntoView();
+    }
+  }, {
+    key: 'initCarousel',
+    value: function initCarousel() {
+      if ($('.carousel-item').length) {
+        this.carouselLength = $('.carousel-item').length;
+        this.activeCarouselIndex = 0;
+
+        setInterval(this.updateActiveCarouselItem, 10000);
+      }
+    }
+  }, {
+    key: 'updateActiveCarouselItem',
+    value: function updateActiveCarouselItem() {
+      $('.carousel-item[data-index="' + this.activeCarouselIndex + '"]').removeClass('active');
+
+      if (this.activeCarouselIndex === this.carouselLength - 1) {
+        this.activeCarouselIndex = 0;
+      } else {
+        this.activeCarouselIndex++;
+      }
+
+      $('.carousel-item[data-index="' + this.activeCarouselIndex + '"]').addClass('active');
     }
   }]);
 

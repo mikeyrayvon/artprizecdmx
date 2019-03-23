@@ -36,7 +36,29 @@ get_template_part('partials/seo');
     ?>
   </div>
 
+<?php
+  $images = get_post_meta($post->ID, '_igv_carousel_images', true);
+?>
+
   <header id="header">
+    <?php
+      if (!empty($images)) {
+    ?>
+    <div id="carousel">
+    <?php
+      $i = 0;
+      shuffle($images);
+      foreach ($images as $image) {
+    ?>
+      <div class="carousel-item<?php echo $i === 0 ? ' active' : ''; ?>" data-index="<?php echo $i; ?>" style="background-image: url('<?php echo $image; ?>');"></div>
+    <?php
+        $i++;
+      }
+    ?>
+    </div>
+    <?php
+      }
+    ?>
     <h1 class="u-visuallyhidden">ArtprizeCDMX 2019</h1>
     <div id="logo-holder">
       <?php get_template_part('partials/artprizecdmx-logo.svg'); ?>
