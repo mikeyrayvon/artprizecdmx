@@ -27,10 +27,10 @@ get_template_part('partials/seo');
 <!--[if lt IE 9]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 
 <section id="main-container">
-  <div id="language-switch" class="font-size-small">
+  <div id="language-switch">
     <?php
       $lang = qtranxf_getLanguage() === 'en' ? 'es' : 'en';
-      echo '<a href="?lang=' . $lang . '" hreflang="' . $lang . '">';
+      echo '<a href="?lang=' . $lang . '" hreflang="' . $lang . '" class="link-underline">';
       _e('[:en]Leer en español[:es]Read in English[:]');
       echo '</a>';
     ?>
