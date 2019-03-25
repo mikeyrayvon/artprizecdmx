@@ -45,8 +45,8 @@ if (have_posts()) {
     <?php echo !empty($dates) ? apply_filters('the_content', $dates) : ''; ?>
   </section>
 
-  <section id="contact" class="padding-top-basic padding-bottom-basic section-border">
-    <h2 class="font-size-large margin-bottom-small font-bold"><?php _e('[:en]Contact[:es]Contacto[:]'); ?></h2>
+  <section id="contact" class="padding-top-basic padding-bottom-basic">
+    <h2 class="font-size-large margin-bottom-small font-bold section-border"><?php _e('[:en]Contact[:es]Contacto[:]'); ?></h2>
     <?php echo !empty($contact) ? apply_filters('the_content', $contact) : ''; ?>
   </section>
 
