@@ -81,6 +81,6 @@ get_template_part('partials/seo');
       </div>
       <div class="grid-item no-gutter">
         <a class="nav-item" data-id="contact"><?php _e('[:en]Contact[:es]Contacto[:]'); ?></a>
-      </div>
+      </div>        
     </div>
   </nav>

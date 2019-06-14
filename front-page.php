@@ -45,10 +45,19 @@ if (have_posts()) {
     <?php echo !empty($dates) ? apply_filters('the_content', $dates) : ''; ?>
   </section>
 
-  <section id="contact" class="padding-top-basic padding-bottom-basic">
+  <section id="contact" class="padding-top-basic">
     <h2 class="font-size-large margin-bottom-small font-bold section-border"><?php _e('[:en]Contact[:es]Contacto[:]'); ?></h2>
     <?php echo !empty($contact) ? apply_filters('the_content', $contact) : ''; ?>
   </section>
+  <section id="collaborators" class="padding-top-basic padding-bottom-mid">
+    <h2 class="font-size-large margin-bottom-small font-bold section-border"><?php _e('[:en]Collaborators[:es]Colaboradores[:]'); ?></h2>
+    <div class="grid-row padding-top-small">
+      <div class="grid-item item-s-4">
+        <a href="https://terremoto.mx/"><?php get_template_part('partials/logo-terremoto.svg'); ?></a>
+      </div>
+    </div>
+  </section>
+
 
 <?php
   }
